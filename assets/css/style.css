@@ -1,0 +1,39 @@
+/* General CSS Styling Rules */
+
+@import url('https://fonts.googleapis.com/css2?family=Mina&family=Rubik&display=swap');
+
+:root {
+    background-color: #aca5ff;
+    font-size: 62.5%
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Mina', 'Rubik', sans-serif;
+
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    font-size: 20px;
+}
+
+.git {
+    color: black;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 1200px) {
+    
+}
+
+@media screen and (max-width: 700px) {
+
+}
+
+@media screen and (max-width: 300px) {
+    
+}
