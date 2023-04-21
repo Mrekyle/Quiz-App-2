@@ -232,7 +232,18 @@ choiceTxt.forEach(choice => {
         const selectedChoice = e.target
         const selectedAnswer = selectedChoice.dataset['number']
 
-        getNextQuestion()
+        let  classToApply = 'incorrect'
+        if(selectedAnswer == currentQuestion.answer) {
+            classToApply = 'correct'
+        }
+
+        selectedChoice.parentElement.classList.add(classToApply)
+
+        setTimeout(() => {
+            selectedChoice.parentElement.classList.remove(classToApply)
+            getNextQuestion()
+        }, 500)
+        // console.log(selectedAnswer == currentQuestion.answer)
     })
 })
 
