@@ -3,7 +3,7 @@
  */
 const mainQuestion = document.getElementById('question');
 const choiceTxt = Array.from(document.getElementsByClassName('choice-text'));
-const questionDOMCounter = document.getElementById('question-counter');
+const questionCounterTxt = document.getElementById('question-counter');
 const gameScore = document.getElementById('score');
 
 /**
@@ -207,6 +207,8 @@ getNextQuestion = () => {
     }
 
     questionCounter++;
+    questionCounterTxt.innerText = questionCounter + '/' + maxQuestions
+
     const currentQuestionI = Math.floor(Math.random() * nextQuestions.length)
         currentQuestion = nextQuestions[currentQuestionI]
         mainQuestion.innerHTML = currentQuestion.question
@@ -239,6 +241,10 @@ choiceTxt.forEach(choice => {
             classToApply = 'correct'
         }
 
+        if(classToApply === 'correct') {
+            incrementScore(correctScoreUp)
+        }
+
         selectedChoice.parentElement.classList.add(classToApply)
 
         setTimeout(() => {
@@ -248,6 +254,11 @@ choiceTxt.forEach(choice => {
         // console.log(selectedAnswer == currentQuestion.answer)
     })
 })
+
+incrementScore = num => {
+    currentScore +=num 
+    gameScore.innerText = currentScore
+}
 
 startGame();
 
