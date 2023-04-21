@@ -1,3 +1,5 @@
+/* Question and answer styling */
+
 .question-choice {
     display: flex;
     margin-bottom: 0.5rem;
@@ -24,10 +26,28 @@
     width: 100%;
 }
 
+/* Answer background color changes */
+
 .correct {
-    background-color: greenyellow;
+    background-color: rgb(153, 255, 0);
 }
 
 .incorrect {
     background-color: red;
+}
+
+/* HUD Styling */
+
+#hud-display {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-txt {
+    text-align: center;
 }

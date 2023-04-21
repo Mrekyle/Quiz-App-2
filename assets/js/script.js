@@ -3,6 +3,8 @@
  */
 const mainQuestion = document.getElementById('question');
 const choiceTxt = Array.from(document.getElementsByClassName('choice-text'));
+const questionDOMCounter = document.getElementById('question-counter');
+const gameScore = document.getElementById('score');
 
 /**
  * Misc Variables
