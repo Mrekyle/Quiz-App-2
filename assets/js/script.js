@@ -199,6 +199,11 @@ startGame = () => {
  * for the current question
  */
 getNextQuestion = () => {
+
+    if(nextQuestions.length === 0 || questionCounter > maxQuestions) {
+        return window.location.assign('/endgame.html')
+    }
+
     questionCounter++;
     const currentQuestionI = Math.floor(Math.random() * nextQuestions.length)
         currentQuestion = nextQuestions[currentQuestionI]
@@ -227,7 +232,7 @@ choiceTxt.forEach(choice => {
         const selectedChoice = e.target
         const selectedAnswer = selectedChoice.dataset['number']
 
-        getNewQuestion()
+        getNextQuestion()
     })
 })
 
