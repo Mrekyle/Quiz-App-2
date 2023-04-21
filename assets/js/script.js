@@ -1,8 +1,14 @@
+/**
+ * Dom Selectors
+ */
 const mainQuestion = document.getElementById('question');
 const choiceTxt = Array.from(document.getElementsByClassName('choice-text'));
 
+/**
+ * Misc Variables
+ */
 let currentQuestion = {}
-let acceptAnswer = true
+let acceptAnswer = false
 let currentScore = 0 
 let questionCounter = 0
 let nextQuestions = []
@@ -177,6 +183,9 @@ const questions = [
     }
 ]
 
+/**
+ * Starts the quiz game 
+ */
 startGame = () => {
     questionCounter = 0
     currentScore = 0
@@ -185,6 +194,10 @@ startGame = () => {
     getNextQuestion()
 }
 
+/**
+ * Sets the question in the question area of the game page. Also setting the answer choices 
+ * for the current question
+ */
 getNextQuestion = () => {
     questionCounter++;
     const currentQuestionI = Math.floor(Math.random() * nextQuestions.length)
@@ -195,7 +208,28 @@ getNextQuestion = () => {
             const choiceNum = choice.dataset['number']
             choice.innerText = currentQuestion['choice' + choiceNum]
         })
+
+        nextQuestions.splice(currentQuestionI, 1)
+
+        acceptAnswer = true
 }
+
+/**
+ * Gets the users selected answer
+ */
+choiceTxt.forEach(choice => {
+    choice.addEventListener('click', e => {
+        // console.log(e.target)
+        if(!acceptAnswer) return
+
+        acceptAnswer = false
+
+        const selectedChoice = e.target
+        const selectedAnswer = selectedChoice.dataset['number']
+
+        getNewQuestion()
+    })
+})
 
 startGame();
 
