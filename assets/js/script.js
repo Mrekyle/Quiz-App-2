@@ -7,7 +7,8 @@ let currentScore = 0;
 let questionCounter = 0;
 let nextQuestions = [];
 
-
+const correctScoreUp = 10;
+const maxQuestions = 10;
 
 /**
  * Questions for the Quiz
@@ -175,3 +176,14 @@ const questions = [
         answer: 4
     }
 ]
+
+startGame = () => {
+    questionCounter = 0;
+    currentScore = 0;
+    nextQuestions = [...questions]
+    // console.log(nextQuestions)
+    getNextQuestion();
+}
+
+startGame();
+
