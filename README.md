@@ -2,7 +2,7 @@
 
 Link to live Quizzels project: [Quizzels - CI Project Two](https://mrekyle.github.io/ci-project-2/)
 
-<img alt="Responsive website testing" src="docs/readme-info/responsive.png">
+<img alt="Responsive website testing" src="docs/readme-info/quiz-responsive.png">
 
 
 ## Table of Contents 
@@ -52,19 +52,7 @@ Whilst the wire frames may not be accurate to the device screen size. The design
 
 ### Initial End Game Page
 
-<img alt="Initial End of Game Page" height="350px" width="400px" src="docs/readme-info/endgame-page.png">
-
-### Initial Iphone/Ipad Game Home Page 
-
-<img alt="Initial Iphone/Ipad Game Home Page" height="350px" width="400px" src="docs/readme-info/iphone-ipad-home.png">
-
-### Initial Iphone/Ipad Quiz Page
-
-<img alt="Initial Iphone/Ipad Quiz Page" height="350px" width="400px" src="docs/readme-info/iphone-ipad-gamepage.png">
-
-### Initial Iphone/Ipad End Game Page 
-
-<img alt="Initial End of Game Page" height="350px" width="400px" src="docs/readme-info/iphone-ipad-endgame.png">
+<img alt="Initial End of Game Page" height="350px" width="400px" src="docs/readme-info/end-screen.png">
 
 ## Features 
 
@@ -97,19 +85,19 @@ Future features that I plan to add are
 
 Final home page design 
 
-<img alt="Home Page" height="350px" width="400px" src="docs/readme-info/home.png">
+<img alt="Home Page" height="350px" width="400px" src="docs/readme-info/home-actual.png">
 
 ### Quiz
 
 Final quiz game design 
 
-<img alt="Quiz Page" height="350px" width="400px" src="docs/readme-info/quiz-page.png">
+<img alt="Quiz Page" height="350px" width="400px" src="docs/readme-info/quiz-actual.png">
 
 ### End Game
 
 Final Endgame design
 
-<img alt="Endgame Page" height="350px" width="400px" src="docs/readme-info/end-game.png">
+<img alt="Endgame Page" height="350px" width="400px" src="docs/readme-info/endgame-actual.png">
 
 ## Technology Used
 
@@ -162,11 +150,7 @@ CSS Pass
 
 Lighthouse was used to test the initial performance, accessibility, best coding practices and SEO of the entire web application. In the below image is the outputted score. The performance is slightly low due to chrome extensions interfering with the testing. 
 
-<img alt="Lighthouse testing" height="400px" width="700px" src="docs/readme-info/lighthouse.png">
-
-It was recommended to redo the test in Incognito mode. Which is done below. Giving a small increase in performance. 
-
-<img alt="Lighthouse testing" height="400px" width="700px" src="docs/readme-info/lighthouse2.png">
+<img alt="Lighthouse testing" height="400px" width="700px" src="docs/readme-info/lighthouse-pass.png">
 
 ## Bugs
 
