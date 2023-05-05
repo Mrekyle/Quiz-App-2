@@ -1,6 +1,6 @@
 # Quizzels
 
-Link to live Quizzels project: [Quizzels - CI Project Two](https://mrekyle.github.io/ci-project-2/)
+Link to live Quizzels project: [Quizzels - CI Project Two](https://mrekyle.github.io/Quiz-App-2/)
 
 <img alt="Responsive website testing" src="docs/readme-info/quiz-responsive.png">
 
