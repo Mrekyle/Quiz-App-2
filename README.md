@@ -1,108 +1,219 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Quizzels
 
-Welcome USER_NAME,
+Link to live Quizzels project: [Quizzels - CI Project Two](https://mrekyle.github.io/ci-project-2/)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+<img alt="Responsive website testing" src="docs/readme-info/responsive.png">
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
-## Gitpod Reminders
+## Table of Contents 
+1. The Project
+    - Project Goals
+    - Initial Design (Wireframes)
+2. Features
+    - Implemented
+    - Future Development
+3. Pages/States
+    - Home 
+    - Quiz 
+    - End Game
+4. Technology used
+5. Testing
+    - CSS
+    - HTML
+    - JS
+    - Lighthouse
+6. Bugs
+7. Project Deployment
+8. Sources
+    - Code
+    - Fonts
+    - Colors
+    - Inspiration 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+## The Project
 
-A blue button should appear to click: _Make Public_,
+### Project Goals
 
-Another blue button should appear to click: _Open Browser_.
+The initial goal of the project was to design a simple yet fun and interactive quiz application that can be used by anyone to test there general knowledge. Allowing all ages to partake in the quiz, no matter what the occasion or reason. Such as at a pub quiz night or a late night cant sleep test.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Initial Design (Wireframes)
 
-A blue button should appear to click: _Make Public_,
+During the initial design phase of the project, wire frames were created to give a visual design idea and an end goal to work towards. With thought and care taken to make the design of the application as responsive and user friendly as possible for all device types. 
+Whilst the wire frames may not be accurate to the device screen size. The designs has been adjusted to work and function correctly on all device types.
 
-Another blue button should appear to click: _Open Browser_.
+### Initial Game Home Page
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+<img alt="Initial Game Home Page" height="350px" width="400px" src="docs/readme-info/home-page.png">
 
-To log into the Heroku toolbelt CLI:
+### Initial Quiz Page 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+<img alt="Initial Quiz Page" height="350px" width="400px" src="docs/readme-info/game-page.png">
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Initial End Game Page
 
-------
+<img alt="Initial End of Game Page" height="350px" width="400px" src="docs/readme-info/endgame-page.png">
 
-## Release History
+### Initial Iphone/Ipad Game Home Page 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+<img alt="Initial Iphone/Ipad Game Home Page" height="350px" width="400px" src="docs/readme-info/iphone-ipad-home.png">
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### Initial Iphone/Ipad Quiz Page
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+<img alt="Initial Iphone/Ipad Quiz Page" height="350px" width="400px" src="docs/readme-info/iphone-ipad-gamepage.png">
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Initial Iphone/Ipad End Game Page 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+<img alt="Initial End of Game Page" height="350px" width="400px" src="docs/readme-info/iphone-ipad-endgame.png">
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Features 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+- Removed | Wrong score count due to feature not working in final build before project deadline. | With all code relating being removed
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Implemented
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+The basic features that are currently implemented into the Quiz are
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+- Multiple Quiz Questions
+- Score counter for correct answers
+- Resetting the quiz to try again once the quiz is finished 
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Future Development
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+Future features that I plan to add are
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- Wrong score count
+- User profiles
+- Image quiz
+- Different Genre's
+- Leader boards
+- Time Challenge's
+- Sounds for correct/wrong answers
+- Add API for different quiz's depending on Genre 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## Pages/States
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Home
 
-------
+Final home page design 
 
-## FAQ about the uptime script
+<img alt="Home Page" height="350px" width="400px" src="docs/readme-info/home.png">
 
-**Why have you added this script?**
+### Quiz
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+Final quiz game design 
 
-**How will this affect me?**
+<img alt="Quiz Page" height="350px" width="400px" src="docs/readme-info/quiz-page.png">
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### End Game
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+Final Endgame design
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+<img alt="Endgame Page" height="350px" width="400px" src="docs/readme-info/end-game.png">
 
-**So….?**
+## Technology Used
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+During the development of the app multiple different types of technology was used and utilized to build the final application. 
 
-**Can I opt out?**
+- HTML - Was used to create the basic web page for the project
+- CSS - Was used to style the web page and the different elements that make up the quiz
+- JS - Was used to build all the functionally of the quiz. Allowing for multiple questions, score counters and changing the appearance of elements
+- Github - Was used for source control of the project allowing progress of the application to be tracked and stored in one place
+- Gitpod - Was used as an IDE. Allowing for the development of the application anywhere anytime
+- Github Pages - Was used to host the application on the internet for all to use and see
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## App Testing
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+During the development of the Project it has been subjected to different testing methods to ensure that all points are hit. No errors are found in the code as well as manual testing of the app to ensure everything works as intended. There was also testing involved to ensure that the application would be responsive and work on all screen sizes and device types. To allow for the best accessability possible. The image for this can be found at the top of the document.
 
-**Anything more?**
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+| Test | Intended Result | Result |
+|------|-----------------|--------|
+|Start button press | To start the quiz and display the first question | Passed |
+|Next button press | To click through to the next question and check if correct | Passed |
+|Reset button press | To reset the quiz once completed | Passed |
+|Color change | Color change on buttons based on correct an wrong answers | Passed | 
 
----
+### HTML
 
-Happy coding!
+Html Testing on W3C Validator - 
+
+Html Fail
+
+<img alt="Html Validator Fail" height="400px" width="700px" src="docs/readme-info/html-fail.png">
+
+Html Pass
+
+<img alt="Html Validator Pass" height="400px" width="700px" src="docs/readme-info/html-pass.png">
+
+### CSS
+
+CSS Testing on W3c Validator - 
+
+CSS Fail 
+
+<img alt="CSS Validator Fail" height="400px" width="700px" src="docs/readme-info/css-fail.png">
+
+CSS Pass
+
+<img alt="CSS Validator Pass" height="400px" width="700px" src="docs/readme-info/css-pass.png">
+
+### Lighthouse
+
+Lighthouse was used to test the initial performance, accessibility, best coding practices and SEO of the entire web application. In the below image is the outputted score. The performance is slightly low due to chrome extensions interfering with the testing. 
+
+<img alt="Lighthouse testing" height="400px" width="700px" src="docs/readme-info/lighthouse.png">
+
+It was recommended to redo the test in Incognito mode. Which is done below. Giving a small increase in performance. 
+
+<img alt="Lighthouse testing" height="400px" width="700px" src="docs/readme-info/lighthouse2.png">
+
+## Bugs
+
+During the development of the application there were many different bugs along the way. From a simple syntax error to a quiz breaking bug. Some of them are in the table below.
+
+
+| Bug | Fix |
+|-----|-----|
+| Only one answer being shown at a time | Filtering through the array to display multiple answers and create multiple buttons |
+| Css shifting the elements around the page. Error on an id adding a margin on the wrong element | Removed unused syntax | 
+
+## Project Deployment
+
+Github pages was used to deploy the application live to the internet. The live Quiz can be found [Here](https://mrekyle.github.io/ci-project-2/)
+
+The deployment steps are as follows - 
+
+<img alt="Deployment step 1" height="350px" width="600px" src="docs/readme-info/deployment-1.png">
+
+<img alt="Deployment step 2" height="350px" width="600px" src="docs/readme-info/deployment-2.png">
+
+<img alt="Deployment step 3" height="350px" width="600px" src="docs/readme-info/deployment-3.png">
+
+<img alt="Deployment step 4" height="350px" width="600px" src="docs/readme-info/deployment-4.png">
+
+## Sources
+
+### Code
+
+All code for the project was written by myself. Whilst using Stack Overflow, Google, various Youtube videos for reference and problem solving. 
+
+### Fonts
+
+Font that were used for the project are from Google Fonts.
+
+Fonts used:
+
+- [Mina ](https://fonts.google.com/specimen/Mina?preview.text=You%20are%20now%20in%201st%20place%20on%20the%20leaderboard&preview.text_type=custom&query=mina)
+- [Rubik ](https://fonts.google.com/specimen/Rubik?preview.text=You%20are%20now%20in%201st%20place%20on%20the%20leaderboard&preview.text_type=custom)
+
+### Colors 
+
+The colors that were chosen for the project were picked because they were all simple yet bold colours. All contrasting each other allowing for an easy to read/view application. 
+
+<img alt="Color Pallete for the project" height="300px" width="375px" src="docs/readme-info/ci-project-2.png">
+
+### Quiz Questions
+
+The questions for the quiz have come from the page linked below.
+- [Quiz Questions](https://www.cosmopolitan.com/uk/worklife/a32388181/best-general-knowledge-quiz-questions/)
