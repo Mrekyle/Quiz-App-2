@@ -9,6 +9,7 @@ Link to live Quizzels project: [Quizzels - CI Project Two](https://mrekyle.githu
 1. The Project
     - Project Goals
     - Initial Design (Wireframes)
+    - Manual Testing
 2. Features
     - Implemented
     - Future Development
@@ -53,6 +54,10 @@ Whilst the wire frames may not be accurate to the device screen size. The design
 ### Initial End Game Page
 
 <img alt="Initial End of Game Page" height="350px" width="400px" src="docs/readme-info/end-screen.png">
+
+### Manual Testing
+
+
 
 ## Features 
 
