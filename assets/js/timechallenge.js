@@ -20,6 +20,9 @@ let nextQuestions = []
 const correctScoreUp = 10
 const maxQuestions = 25
 
+setInterval(gameTime, 1000);
+let gameSeconds = 0;
+
 /**
  * Questions for the Quiz
  */
@@ -68,10 +71,30 @@ startGame = () => {
 }
 
 /**
- * Timer for the quiz, Counting up each second incrementing the time. 
+ * Timer for the quiz, Inputting the iteration into the DOM to 
+ * display to the player of the quiz. 
  */
-quizTimer = () => {
-    console.log('Timer is now working and being called correctly')
+function gameTime() {
+    console.log('Timer is now working and starting on page load.')
+
+    ++gameSeconds;
+    gameTimeSeconds.innerHTML = time(gameSeconds % 60);
+    gameTimeMinutes.innerHTML = time(parseInt(gameSeconds / 60));
+}
+
+/**
+ * Timer for the quiz counting up as time goes on.
+ */
+
+time = (val) => {
+    console.log('Time has started counting.')
+
+    let timeValue = val + '';
+    if (timeValue.length < 2) {
+        return '0' + timeValue;
+    } else {
+        return timeValue
+    }  
 }
 
 /**
