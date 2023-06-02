@@ -5,6 +5,8 @@ const mainQuestion = document.getElementById('question');
 const choiceTxt = Array.from(document.getElementsByClassName('choice-text'));
 const questionCounterTxt = document.getElementById('question-counter');
 const gameScore = document.getElementById('score');
+const gameTimeMinutes = document.getElementById('timer-counter-minutes');
+const gameTimeSeconds = document.getElementById('timer-counter-seconds');
 
 /**
  * Misc Variables
@@ -16,7 +18,7 @@ let questionCounter = 0
 let nextQuestions = []
 
 const correctScoreUp = 10
-const maxQuestions = 10
+const maxQuestions = 25
 
 /**
  * Questions for the Quiz
@@ -63,6 +65,13 @@ startGame = () => {
     nextQuestions = [...questions]
     // console.log(nextQuestions)
     getNextQuestion()
+}
+
+/**
+ * Timer for the quiz, Counting up each second incrementing the time. 
+ */
+quizTimer = () => {
+    console.log('Timer is now working and being called correctly')
 }
 
 /**

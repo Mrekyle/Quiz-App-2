@@ -70,6 +70,7 @@ The basic features that are currently implemented into the Quiz are
 - Multiple Quiz Questions
 - Score counter for correct answers
 - Resetting the quiz to try again once the quiz is finished 
+- Time Trials once completed one round of the quiz
 
 ### Future Development
 
@@ -80,7 +81,6 @@ Future features that I plan to add are
 - Image quiz
 - Different Genre's
 - Leader boards
-- Time Challenge's
 - Sounds for correct/wrong answers
 - Add API for different quiz's depending on Genre 
 

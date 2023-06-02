@@ -32,6 +32,13 @@ h1 > span {
     font-weight: 300;
 }
 
+h1 > i {
+    font-style: normal;
+    font-size: 5.4rem;
+    color: #56a5eb;
+    margin-bottom: 3.4rem;
+}
+
 h2 {
     font-size: 3.2rem;
     margin-bottom: 4rem;
