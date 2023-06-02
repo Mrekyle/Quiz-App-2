@@ -110,6 +110,11 @@ h3 {
     line-height: 3.4rem;
 }
 
+.play {
+    display: inline-block;
+
+}
+
 /* Footer */
 
 footer {
