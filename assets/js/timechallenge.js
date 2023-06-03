@@ -5,6 +5,8 @@ const mainQuestion = document.getElementById('question');
 const choiceTxt = Array.from(document.getElementsByClassName('choice-text'));
 const questionCounterTxt = document.getElementById('question-counter');
 const gameScore = document.getElementById('score');
+const minutesTimer = document.getElementById("timer-counter-minutes");
+const secondsTimer = document.getElementById("timer-counter-seconds");
 
 /**
  * Misc Variables
@@ -16,7 +18,12 @@ let questionCounter = 0
 let nextQuestions = []
 
 const correctScoreUp = 10
-const maxQuestions = 25
+const maxQuestions = 20
+
+let totalSeconds = 0;
+let totalMinutes = 0
+
+setInterval(setTime, 1000);
 
 /**
  * Questions for the Quiz
@@ -72,6 +79,8 @@ startGame = () => {
 getNextQuestion = () => {
 
     if(nextQuestions.length === 0 || questionCounter > maxQuestions) {
+        localStorage.setItem('mostRecentTimeMinutes', totalMinutes)
+        localStorage.setItem('mostRecentScoreSeconds', totalSeconds)
         localStorage.setItem('mostRecentScore', currentScore)
         return window.location.assign('/timetrials-endgame.html')
     }
@@ -91,6 +100,29 @@ getNextQuestion = () => {
         nextQuestions.splice(currentQuestionI, 1)
 
         acceptAnswer = true
+}
+
+/**
+ * Timer Function
+ */
+function setTime() {
+    ++totalSeconds;
+    secondsTimer.innerHTML = pad(totalSeconds%60);
+
+    if(totalSeconds > 60 ) {
+        totalSeconds = 0;
+        ++totalMinutes;
+        minutesTimer.innerHTML = totalMinutes;
+    }
+}
+
+function pad(val) {
+    var valString = val + "";
+    if(valString.length < 2) {
+        return "0" + valString;
+    } else {
+        return valString;
+    }
 }
 
 /**

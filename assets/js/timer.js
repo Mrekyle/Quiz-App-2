@@ -10,6 +10,7 @@ const secondsTimer = document.getElementById("timer-counter-seconds");
  */
 
 let totalSeconds = 0;
+let totalMinutes = 0
 
 setInterval(setTime, 1000);
 
@@ -19,7 +20,12 @@ setInterval(setTime, 1000);
 function setTime() {
     ++totalSeconds;
     secondsTimer.innerHTML = pad(totalSeconds%60);
-    minutesTimer.innerHTML = pad(parseInt(totalSeconds/60));
+
+    if(totalSeconds > 60 ) {
+        totalSeconds = 0;
+        ++totalMinutes;
+        minutesTimer.innerHTML = totalMinutes;
+    }
 }
 
 function pad(val) {
