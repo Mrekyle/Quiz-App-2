@@ -181,6 +181,16 @@ The deployment steps are as follows -
 
 <img alt="Deployment step 4" height="350px" width="600px" src="docs/readme-info/deployment-4.png">
 
+You can also fork the repository yourself if you are wanting to continue the development of the quiz. By following the steps below:
+
+By clicking the 'FORK' button in the top right hand corner or the repo, you can clone it to your own repo's
+
+<img alt="Forking Step 1" height="350px" width="600px" src="docs/readme-info/fork-1.png">
+
+Once you have clicked the 'FORK' button you can then rename the repo to your choosing, and save it into your repo's
+
+<img alt="Forking Step 2" height="350px" width="600px" src="docs/readme-info/fork-2.png">
+
 ## Sources
 
 ### Code
@@ -204,5 +214,6 @@ The colors that were chosen for the project were picked because they were all si
 
 ### Quiz Questions
 
-The questions for the quiz have come from the page linked below.
+The questions for the quiz have come from the page linked below. And random questions for the time trials are from the API
 - [Quiz Questions](https://www.cosmopolitan.com/uk/worklife/a32388181/best-general-knowledge-quiz-questions/)
+- [API Questions](https://opentdb.com/)
