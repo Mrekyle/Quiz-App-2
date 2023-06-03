@@ -51,3 +51,26 @@
 .hud-main-txt {
     text-align: center;
 }
+
+
+@media screen and (max-width: 1200px) {
+    
+}
+
+@media screen and (max-width: 700px) {
+    .hud-prefix {
+        font-size: 1.8rem;
+    }
+
+    .hud-main-txt {
+        font-size: 3rem;
+    }
+
+    .question-choice {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+}
