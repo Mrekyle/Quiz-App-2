@@ -80,7 +80,7 @@ getNextQuestion = () => {
 
     if(nextQuestions.length === 0 || questionCounter > maxQuestions) {
         localStorage.setItem('mostRecentTimeMinutes', totalMinutes)
-        localStorage.setItem('mostRecentScoreSeconds', totalSeconds)
+        localStorage.setItem('mostRecentTimeSeconds', totalSeconds)
         localStorage.setItem('mostRecentScore', currentScore)
         return window.location.assign('/timetrials-endgame.html')
     }
