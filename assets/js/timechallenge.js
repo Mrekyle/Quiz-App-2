@@ -82,7 +82,7 @@ getNextQuestion = () => {
         localStorage.setItem('mostRecentTimeMinutes', totalMinutes)
         localStorage.setItem('mostRecentTimeSeconds', totalSeconds)
         localStorage.setItem('mostRecentScore', currentScore)
-        return window.location.assign('/timetrials-endgame.html')
+        return window.location.assign('./timetrials-endgame.html')
     }
 
     questionCounter++;

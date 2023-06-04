@@ -205,7 +205,7 @@ getNextQuestion = () => {
 
     if(nextQuestions.length === 0 || questionCounter > maxQuestions) {
         localStorage.setItem('mostRecentScore', currentScore)
-        return window.location.assign('/endgame.html')
+        return window.location.assign('./endgame.html')
     }
 
     questionCounter++;
