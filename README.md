@@ -166,10 +166,11 @@ During the development of the application there were many different bugs along t
 |-----|-----|
 | Only one answer being shown at a time | Filtering through the array to display multiple answers and create multiple buttons |
 | Css shifting the elements around the page. Error on an id adding a margin on the wrong element | Removed unused syntax | 
+| Local storage error| Error to do with local storage not storing data correctly | Fixed by a syntax/spelling error |
 
 ## Project Deployment
 
-Github pages was used to deploy the application live to the internet. The live Quiz can be found [Here](https://mrekyle.github.io/ci-project-2/)
+Github pages was used to deploy the application live to the internet. The live Quiz can be found [Here](https://mrekyle.github.io/Quiz-App-2//)
 
 The deployment steps are as follows - 
 
